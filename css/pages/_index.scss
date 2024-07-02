@@ -1,0 +1,181 @@
+main{
+    background-color: #fff;
+    position: relative;
+}
+
+#jumbotron{
+    @include media-breakpoint-up(sm) {
+        min-height: 70vh;
+    }
+    min-height: 85vh;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    overflow-y: hidden;
+    // background-color: rgb(255, 255, 255);
+}
+.jumbotron-parallax{
+    align-items: center;
+    display: flex;
+    flex-flow: row;
+    position: relative;
+    width: 100%;
+    .bg-parallax{
+        height: 860.556px;
+        transform: translate3d(0px, 0.06px, 0px);
+        backface-visibility: hidden;
+        background-image: url(/images/jumbotron.jpg);
+        background-position: bottom bottom;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        opacity: 1;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        .parallax-overlay{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(16, 17, 18, 0.5);
+        }
+    }
+    .content{
+        position: relative;
+        width: 100%;
+        margin-bottom: -56px;
+        .text{
+            max-width: 1080px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 15px;
+            padding-right: 15px;
+            h1{
+                margin-bottom: .5em;
+                margin-top: 0;
+                text-rendering: optimizeSpeed;
+                width: 100%;
+                @include media-breakpoint-up(sm) {
+                    font-size: 54px !important;
+                }
+                font-size: 27px !important;
+                font-weight: 700;
+                line-height: .85 !important;
+                color: #fff;
+            }
+            h2{
+                margin-bottom: .5em;
+                margin-top: 0;
+                text-rendering: optimizeSpeed;
+                width: 100%;
+                @include media-breakpoint-up(sm) {
+                    font-size: 54px !important;
+                }
+                font-size: 23px;
+                font-weight: 700;
+                line-height: .85 !important;
+                color: #fff;
+            }
+            p{
+                margin-bottom: 1.3em;
+                font-size: 18px;
+                color: #ffffff;
+            }
+            .btn-book{
+                padding-top: 8px;
+                padding-bottom: 8px;
+                padding-left: 40px;
+                padding-right: 40px;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+#weather{
+    margin-top: 30px;
+    .col-12{
+        padding: 0 15px 30px;
+        padding-bottom: 0px;
+        position: relative;
+        width: 100%;
+        margin: 0;
+        .content-1{
+            padding: 0 15px 30px;
+            h3{
+                margin-bottom: .5em;
+                margin-top: 0;
+                text-rendering: optimizeSpeed;
+                width: 100%;
+                color: #101112;
+                font-size: 35px;
+                text-align: center;
+            }
+            p{
+                text-align: center;
+                font-size: 16px;
+            }
+        }
+        .content-2{
+            .widget{
+                padding-top: 1em;
+                .widget-tab{
+                    width: calc(75% - 2.5rem);
+                    margin-right: auto;
+                    margin-left: auto;
+                    .widget-area{
+                        padding: 30px;
+                        margin: 0px 0px 125px 0px;
+                        background-position: 50% 50%;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        flex: 1 0 auto;
+                        position: relative;
+                        width: 100%;
+                        .section-widget{
+                            align-items: center;
+                            display: flex;
+                            flex-flow: row;
+                            position: relative;
+                            width: 100%;
+                            padding-left: 30px;
+                            padding-right: 30px;
+                            padding-top: 0px;
+                            padding-bottom: 0px;
+                            min-height: 600px;
+                            .bg-widget{
+                                background-image: url(https://www.riugparagliding.com/wp-content/uploads/2021/05/Aktivitas-paragliding-di-Bali.jpg);
+                                height: 100%;
+                                left: 0;
+                                margin: 0 !important;
+                                padding: 0 !important;
+                                position: absolute;
+                                right: 0;
+                                top: 0;
+                                background-repeat: no-repeat !important;
+                                background-size: cover !important;
+                                background-position: 65% 0%;
+                                border-radius: 7px !important;
+                                .section-bg-overlay{
+                                    background-color: rgba(0, 0, 0, 0.25);
+                                    border-radius: 7px !important;
+                                    height: 100%;
+                                    left: 0;
+                                    margin: 0 !important;
+                                    padding: 0 !important;
+                                    position: absolute;
+                                    right: 0;
+                                    top: 0;
+                                    bottom: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

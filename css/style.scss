@@ -1,0 +1,10 @@
+$offcanvas-horizontal-width: 360px;
+
+@import "colors";
+@import "../vendor/bootstrap/scss/bootstrap.scss";
+
+@import "fonts";
+@import "icons";
+@import "global";
+
+@import "pages/index";
